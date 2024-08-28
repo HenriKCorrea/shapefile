@@ -1,24 +1,30 @@
 {
-  "name": "shapefile",
-  "version": "0.6.6",
-  "description": "An implementation of the shapefile (.shp) spatial data format.",
+  "name": "shapefile-fork",
+  "version": "1.0.0",
+  "description": "A fork of the shapefile package with additional features.",
   "keywords": [
     "geojson",
     "shapefile"
   ],
-  "homepage": "https://github.com/mbostock/shapefile",
+  "homepage": "https://github.com/henrikcorrea/shapefile",
   "license": "BSD-3-Clause",
   "author": {
     "name": "Mike Bostock",
     "url": "https://bost.ocks.org/mike"
   },
+  "contributors": [
+    {
+      "name": "Henrique Krausburg Correa",
+      "url": "https://github.com/HenriKCorrea"
+    }
+  ],
   "unpkg": "dist/shapefile.js",
   "jsdelivr": "dist/shapefile.js",
   "main": "dist/shapefile.node.js",
   "module": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbostock/shapefile.git"
+    "url": "git+https://github.com/henrikcorrea/shapefile.git"
   },
   "bin": {
     "dbf2json": "bin/dbf2json",
