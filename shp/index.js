@@ -1,11 +1,16 @@
 import slice from "slice-source";
 import view from "../view";
 import shp_cancel from "./cancel";
-import parseMultiPoint from "./multipoint";
 import parseNull from "./null";
 import parsePoint from "./point";
-import parsePolygon from "./polygon";
 import parsePolyLine from "./polyline";
+import parsePolygon from "./polygon";
+import parseMultiPoint from "./multipoint";
+import parsePointZ from "./pointz";
+import parsePolyLineZ from "./polylinez";
+import parsePolygonZ from "./polygonz";
+import parseMultiPointZ from "./multipointz";
+import parseMultiPatch from "./multipatch";
 import shp_read from "./read";
 
 var parsers = {
@@ -14,14 +19,15 @@ var parsers = {
   3: parsePolyLine,
   5: parsePolygon,
   8: parseMultiPoint,
-  11: parsePoint, // PointZ
-  13: parsePolyLine, // PolyLineZ
-  15: parsePolygon, // PolygonZ
-  18: parseMultiPoint, // MultiPointZ
+  11: parsePointZ,
+  13: parsePolyLineZ,
+  15: parsePolygonZ,
+  18: parseMultiPointZ,
   21: parsePoint, // PointM
   23: parsePolyLine, // PolyLineM
   25: parsePolygon, // PolygonM
-  28: parseMultiPoint // MultiPointM
+  28: parseMultiPoint, // MultiPointM
+  31: parseMultiPatch
 };
 
 export default function(source) {
