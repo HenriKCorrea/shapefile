@@ -1,6 +1,6 @@
 {
   "name": "shapefile-fork",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A fork of the shapefile package with additional features.",
   "keywords": [
     "geojson",
@@ -22,6 +22,7 @@
   "jsdelivr": "dist/shapefile.js",
   "main": "dist/shapefile.node.js",
   "module": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/henrikcorrea/shapefile.git"
@@ -45,6 +46,8 @@
     "text-encoding": "^0.6.4"
   },
   "devDependencies": {
+    "@types/geojson": "^7946.0.14",
+    "@types/node": "^22.5.1",
     "package-preamble": "0.1",
     "rollup": "0.49",
     "rollup-plugin-node-resolve": "3",
